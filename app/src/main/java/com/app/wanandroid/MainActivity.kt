@@ -11,11 +11,11 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.app.wanandroid.nav.BottomNavBar
-import com.app.wanandroid.nav.TopBar
 import com.app.wanandroid.navigation.NavigationGraph
 import com.app.wanandroid.ui.theme.WanAndroidComposeTheme
 
 class MainActivity : ComponentActivity() {
+
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,9 +26,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 ) {
                     Scaffold(
-                        topBar = {
-                            TopBar("Header")
-                        },
+//                        topBar = {
+//                            TopBar("Header")
+//                        },
                         bottomBar = {
                             BottomNavBar(navController)
                         },
