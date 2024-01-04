@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "WanAndroidCompose"
+rootProject.name = "WanAndroid-Compose"
 include ':app'
-include ':lib_base'
+include ':lib:lib_base'
